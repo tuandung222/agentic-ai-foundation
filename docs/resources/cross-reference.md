@@ -70,6 +70,19 @@ title: Cross-reference
 | Làm project tổng hợp | `resources/capstone-projects` |
 | Bộ 6 lab paste-and-run | `resources/lab-pack` |
 
+## Protocol deep dive
+
+| Chủ đề | Bài nên đọc |
+|---|---|
+| Bản đồ protocol agent 2026 | `04-agent-to-agent/05-protocol-landscape` |
+| MCP đi sâu | `04-agent-to-agent/06-mcp-deep-dive` |
+| A2A và ACP merge | `04-agent-to-agent/07-a2a-and-acp-merge` |
+| ANP và AGORA | `04-agent-to-agent/08-anp-and-agora` |
+| AGNTCY và SLIM | `04-agent-to-agent/09-agntcy-and-slim` |
+| Agentic commerce: AP2, x402, UCP | `04-agent-to-agent/10-agentic-commerce` |
+| Khung quyết định protocol | `04-agent-to-agent/11-protocol-decision-framework` |
+| Cheatsheet một trang | `resources/protocol-cheatsheet` |
+
 ## Research-aligned chapters
 
 | Khái niệm | Bài nên đọc |

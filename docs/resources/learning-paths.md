@@ -114,3 +114,18 @@ Lộ trình này dành cho người đã quen với agent cơ bản và muốn n
 10. Lab Pack 6 bài tập.
 
 Sau lộ trình này, người đọc nên có khả năng đánh giá một hệ thống agentic theo các trục kỹ thuật, kiến trúc, an toàn và chi phí, đồng thời biết cách tối ưu mà không phá vỡ chất lượng.
+
+## Lộ trình 9: Agent Protocol Landscape 2026
+
+Lộ trình này dành cho người muốn nắm rõ hệ sinh thái protocol agent và biết khi nào nên dùng cái nào.
+
+1. Bản đồ protocol agent 2026.
+2. MCP đi sâu.
+3. A2A và sự gộp của ACP.
+4. ANP và AGORA, hướng decentralized và meta-protocol.
+5. AGNTCY và SLIM, Internet of Agents.
+6. Agentic commerce: AP2, x402, UCP.
+7. Khung quyết định Protocol và giá trị thực tiễn.
+8. Protocol cheatsheet một trang.
+
+Sau lộ trình này, người đọc có thể đánh giá protocol mới qua bộ năm câu hỏi, lập lộ trình adoption bốn giai đoạn, và phân biệt giữa protocol có giá trị thực tiễn và nhãn marketing.

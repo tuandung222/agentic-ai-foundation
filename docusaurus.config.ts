@@ -157,6 +157,7 @@ const config: Config = {
             {label: 'Syllabus', to: '/docs/resources/course-syllabus'},
             {label: 'Lab Pack', to: '/docs/resources/lab-pack'},
             {label: 'Cost Model', to: '/docs/11-production-operations/06-cost-model'},
+            {label: 'Protocol Cheatsheet', to: '/docs/resources/protocol-cheatsheet'},
           ],
         },
       ],
