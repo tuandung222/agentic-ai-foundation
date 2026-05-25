@@ -34,3 +34,12 @@ title: Cross-reference
 | Permission model | `08-security-governance/05-permission-model` |
 | Ecosystem decision guide | `09-ecosystem-map/04-decision-guide` |
 | Research agent với MCP | `10-case-studies/04-research-agent-with-mcp` |
+
+## Tài nguyên thực hành
+
+| Nhu cầu | Tài nguyên |
+|---|---|
+| Chọn lộ trình học | `resources/learning-paths` |
+| Làm bài tập thực hành | `resources/labs` |
+| Chấm chất lượng agent | `resources/rubrics` |
+| Lập kế hoạch adoption | `resources/adoption-roadmap` |

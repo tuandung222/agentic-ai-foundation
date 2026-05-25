@@ -16,7 +16,7 @@ Workflow là chuỗi bước có thứ tự. Ví dụ: tạo feature mới, ch�
 
 ## Memory
 
-Memory là thông tin được lưu qua phiên làm việc. Nó có thể là preference của người dùng, quyết định kiến trúc, tên repo, constraint riêng. Memory phải có phạm vi. Một memory của repo này không nên tự động áp vào repo khác nếu không liên quan.
+Memory là thông tin được lưu qua phiên làm việc. Nó có thể là preference của người dùng, quyết định kiến trúc, tên repo, quyết định kỹ thuật dài hạn. Memory phải có phạm vi. Một memory của repo này không nên tự động áp vào repo khác nếu không liên quan.
 
 ## Quy tắc phân loại
 

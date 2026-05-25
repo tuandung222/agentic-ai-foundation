@@ -36,3 +36,31 @@ title: Checklists
 - Có owner cuối cùng.
 - Có shared state hoặc handoff packet.
 - Có giới hạn vòng lặp.
+
+
+## Prompt injection defense
+
+- Phân biệt instruction đáng tin và dữ liệu không tin cậy.
+- Gắn nhãn nguồn cho tool output.
+- Không đưa secret vào model context.
+- Scope tool theo task phase.
+- Có confirmation gate cho side effect.
+- Có eval chứa dữ liệu độc hại mô phỏng.
+
+## Permission review
+
+- Tool được phân loại read-only, draft, side-effect hoặc production-impacting.
+- Input nguy hiểm được kiểm tra bằng policy, không chỉ bằng prompt.
+- Approval request nêu rõ side effect và rollback.
+- Token và credential có scope tối thiểu.
+- Có cách revoke quyền nhanh.
+- Audit log có redaction.
+
+## Release gate cho agent workflow
+
+- Golden tasks không regression.
+- Security-sensitive tasks không fail.
+- Cost và latency trong ngưỡng chấp nhận.
+- Human correction rate không tăng bất thường.
+- Trace sampling được review.
+- Có owner chịu trách nhiệm vận hành.
