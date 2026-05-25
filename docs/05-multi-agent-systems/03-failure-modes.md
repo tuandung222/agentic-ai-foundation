@@ -4,28 +4,30 @@ title: Failure Modes của Multi-agent
 
 # Failure Modes của Multi-agent
 
-Multi-agent systems có failure modes riêng. Chúng không chỉ cộng lỗi của từng agent, mà còn tạo lỗi do phối hợp.
+Multi-agent systems có failure modes riêng. Một single agent có thể sai vì thiếu context hoặc gọi tool sai. Nhiều agent còn có thể sai vì phối hợp kém: hiểu khác mục tiêu, ghi đè artifact của nhau, vòng lặp tranh luận, hoặc không ai chịu trách nhiệm cuối cùng.
 
 ## Coordination overhead
 
-Nhiều agent cần trao đổi context. Nếu task nhỏ, chi phí phối hợp vượt lợi ích. Đây là lý do nhiều swarm demo trông ấn tượng nhưng không hiệu quả trong production.
+Mỗi agent thêm vào hệ thống đều tạo chi phí: context transfer, state sync, latency và debug. Nếu chi phí phối hợp lớn hơn lợi ích chuyên môn hóa, multi-agent làm hệ thống tệ hơn. Đây là lý do production workflow thường dùng workflow graph rõ thay vì swarm tự do.
 
 ## Responsibility gap
 
-Planner nghĩ coder đã verify. Coder nghĩ tester sẽ verify. Tester nghĩ reviewer đã xem security. Kết quả là không ai chịu trách nhiệm cuối cùng. Cách xử lý là có owner rõ cho mỗi artifact và một final integrator.
+Responsibility gap xảy ra khi mỗi agent nghĩ agent khác chịu trách nhiệm. Planner giao task mơ hồ, executor làm theo cách riêng, reviewer chỉ kiểm bề mặt, integrator không có quyền quyết định. Kết quả là artifact cuối không ai thật sự sở hữu.
+
+Cách giảm responsibility gap là có owner cuối cùng và artifact contract. Mỗi role phải biết output của mình được dùng ở đâu và ai chấp nhận nó.
+
+## Context drift
+
+Các agent có thể nhìn context khác nhau. Planner dùng version cũ của requirement, coder đọc file mới, reviewer xem diff chưa cập nhật. Khi context drift, trao đổi giữa agent trở nên mâu thuẫn. Shared state hoặc blackboard giúp giảm vấn đề này.
 
 ## Consensus illusion
 
-Nhiều agent cùng đồng ý không có nghĩa là đúng. Nếu các agent dùng cùng model, cùng context thiếu, chúng có thể cùng sai theo cùng một hướng. Cần evaluator độc lập hoặc test khách quan.
+Nhiều agent đồng ý không có nghĩa là đúng. Nếu các agent dùng cùng model, cùng context thiếu và cùng bias, chúng có thể đồng ý sai. Review độc lập chỉ có giá trị khi reviewer có rubric, context hoặc perspective khác.
 
-## Context divergence
+## Loop và escalation failure
 
-Mỗi agent có một phần context khác nhau. Nếu không đồng bộ artifact, agent A có thể dựa trên file cũ trong khi agent B đã sửa. Blackboard hoặc shared state giúp giảm lỗi này, nhưng lại cần concurrency control.
+Multi-agent có thể mắc kẹt trong loop: reviewer yêu cầu sửa, coder sửa, reviewer đổi tiêu chí, planner tái phân công. Cần stopping condition, timeout và escalation rule. Khi không đủ thông tin, hệ thống nên hỏi người dùng hoặc dừng blocked-correctly.
 
-## Checklist giảm rủi ro
+## Kết luận
 
-- Mỗi agent có role và artifact rõ.
-- Có owner cuối cùng cho task.
-- Có shared state hoặc handoff packet.
-- Có test hoặc evaluator khách quan.
-- Có giới hạn vòng lặp và chi phí.
+Multi-agent system cần được thiết kế như hệ thống phối hợp, không phải cuộc trò chuyện nhóm. Role, state, artifact, owner và stopping condition là các control chính để tránh failure modes.
