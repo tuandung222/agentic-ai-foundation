@@ -72,6 +72,7 @@ const config: Config = {
           numberPrefixParser: false,
         },
         blog: false,
+        sitemap: false,
         theme: {
           customCss: './src/css/custom.css',
         },

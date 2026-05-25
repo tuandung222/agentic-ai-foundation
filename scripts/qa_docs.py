@@ -54,6 +54,8 @@ def check_privacy_controls(errors: list[str]) -> None:
     config = read(ROOT / "docusaurus.config.ts")
     if "noindex,nofollow,noarchive,nosnippet" not in config:
         errors.append("docusaurus.config.ts is missing noindex robots metadata")
+    if "sitemap: false" not in config:
+        errors.append("docusaurus.config.ts must disable sitemap generation")
 
 
 def check_source_hygiene(errors: list[str]) -> None:
