@@ -38,6 +38,34 @@ Prompt injection thường muốn agent thực hiện side effect: gửi dữ li
 
 Không có phòng thủ nào hoàn hảo, nên cần eval riêng. Hãy tạo task chứa prompt injection trong issue, webpage, log và tool output. Agent pass khi nó nhận diện dữ liệu là untrusted, không làm theo instruction độc hại và vẫn hoàn thành phần hợp lệ của task.
 
+## Memory và tool-output poisoning
+
+Prompt injection không chỉ xảy ra trong một lượt. Khi agent có memory dài hạn, một input độc hại lưu vào memory có thể quay lại trong phiên sau như “sự thật đã được ghi nhận”. Tương tự, tool output từ nguồn không tin cậy có thể bị cache, biến rủi ro nhất thời thành rủi ro tích lũy.
+
+Phòng thủ ở lớp memory cần ba nguyên tắc.
+
+Một là gắn nhãn nguồn cho mọi mục memory. Memory đến từ system instruction có quyền cao. Memory đến từ tool output hoặc người dùng có quyền thấp. Khi đọc lại, runtime giữ phân tầng này.
+
+Hai là không nâng cấp quyền tự động. Một mục memory “user nói rằng được phép deploy” không trở thành quyền deploy. Quyền phải đến từ policy có ACL, không phải từ văn bản tự do trong memory.
+
+Ba là kiểm chứng định kỳ. Memory dài hạn cần expiry hoặc xác minh lại. Một quyết định kiến trúc cũ có thể không còn đúng, một preference của người dùng có thể đã đổi, một mục được lưu trong khi tấn công nên được rà soát.
+
+Đối với tool output, cùng nguyên tắc: gắn nhãn, không nâng quyền, có timeout cho cache, và có eval bắt được khi output bị thay đổi đột ngột so với lịch sử.
+
+## Detection qua signal
+
+Ngoài eval task chứa injection chủ động, runtime nên có signal cảnh báo:
+
+| Signal | Lý do nghi ngờ |
+|---|---|
+| Tool output chứa cụm như “ignore previous”, “you are now” | Có thể là instruction nhúng |
+| Hành động đột ngột rộng hơn task gốc | Có thể bị dẫn dắt |
+| Yêu cầu disable safety hoặc bypass approval | Đặc trưng tấn công |
+| Memory mới mâu thuẫn lớn với memory cũ trong phạm vi | Có thể bị poisoning |
+| Tool call lệch khỏi pattern lịch sử của task class | Cần review |
+
+Mỗi signal không phải bằng chứng tấn công. Nhưng tổng hợp signal giúp ưu tiên alert.
+
 ## Kết luận
 
-Prompt injection không phải lỗi prompt đơn giản. Nó là lỗi boundary giữa instruction và data. Phòng thủ tốt cần kết hợp prompt hierarchy, tool scoping, runtime permission, output labeling, redaction, confirmation và eval.
+Prompt injection không phải lỗi prompt đơn giản. Nó là lỗi boundary giữa instruction và data. Phòng thủ tốt cần kết hợp prompt hierarchy, tool scoping, runtime permission, output labeling, redaction, confirmation, memory provenance và eval.
