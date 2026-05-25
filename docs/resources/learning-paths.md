@@ -70,3 +70,17 @@ Lộ trình này dành cho tech lead, security engineer hoặc platform owner.
 7. Enterprise Agent case study.
 
 Sau lộ trình này, người đọc nên có checklist để đánh giá agent rollout: identity, least privilege, audit, approval, redaction, trace retention, rollback và release gate.
+
+## Lộ trình 6: Production Operations
+
+Lộ trình này dành cho người chuẩn bị đưa agent vào môi trường vận hành thật.
+
+1. Evaluation Harness.
+2. Governance Controls.
+3. Tổng quan Production Operations.
+4. Runtime Architecture cho Production Agent.
+5. Cost, Latency và Reliability.
+6. Release và Rollout cho Agent.
+7. Incident Response cho Agentic Systems.
+
+Sau lộ trình này, người đọc nên có khả năng thiết kế release gate, canary rollout, trace strategy, incident runbook và ownership model cho agent production.

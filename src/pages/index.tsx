@@ -18,6 +18,7 @@ const parts = [
   ['08', 'Security', 'Prompt injection, tool injection, data exfiltration, confused deputy và governance.', '/docs/08-security-governance/01-overview'],
   ['09', 'Ecosystem Map', 'Phân loại protocol, convention, framework, product feature và marketing label.', '/docs/09-ecosystem-map/01-overview'],
   ['10', 'Case Studies', 'Áp dụng vào coding agent, research agent, pipeline nhiều agent và enterprise agent.', '/docs/10-case-studies/01-overview'],
+  ['11', 'Production Operations', 'Runtime architecture, reliability, cost, rollout, incident response và ownership cho agent production.', '/docs/11-production-operations/01-overview'],
 ];
 
 function HomepageHeader(): ReactNode {
@@ -40,9 +41,9 @@ function PartGrid(): ReactNode {
   return (
     <section className={styles.gridSection}>
       <div className="container">
-        <Heading as="h2" className={styles.sectionTitle}>Mười một phần bài giảng</Heading>
+        <Heading as="h2" className={styles.sectionTitle}>Mười hai phần bài giảng</Heading>
         <p className={styles.sectionSubtitle}>
-          Lộ trình đi từ trực giác nền tảng tới thiết kế repo, protocol, multi-agent, evaluation và governance.
+          Lộ trình đi từ trực giác nền tảng tới thiết kế repo, protocol, multi-agent, evaluation, governance và production operations.
         </p>
         <div className={styles.grid}>
           {parts.map(([number, title, description, to]) => (

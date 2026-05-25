@@ -135,6 +135,19 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
+      label: 'Phần 11: Production Operations',
+      link: {type: 'doc', id: '11-production-operations/01-overview'},
+      collapsed: false,
+      items: [
+        '11-production-operations/01-overview',
+        '11-production-operations/02-runtime-architecture',
+        '11-production-operations/03-cost-latency-reliability',
+        '11-production-operations/04-release-rollout',
+        '11-production-operations/05-incident-response',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Tài nguyên',
       collapsed: true,
       items: [

@@ -64,3 +64,14 @@ title: Checklists
 - Human correction rate không tăng bất thường.
 - Trace sampling được review.
 - Có owner chịu trách nhiệm vận hành.
+
+## Production readiness
+
+- Runtime ghi version của model, prompt, tool schema và policy.
+- Tool calls đi qua broker hoặc lớp enforce permission.
+- Có token budget, tool-call budget, timeout và max retries.
+- Có trace redaction và retention policy.
+- Release gate chạy golden tasks và security-sensitive tasks.
+- Canary rollout có monitoring và rollback.
+- Incident runbook có containment steps.
+- Owner vận hành được ghi rõ.

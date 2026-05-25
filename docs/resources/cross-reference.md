@@ -43,3 +43,12 @@ title: Cross-reference
 | Làm bài tập thực hành | `resources/labs` |
 | Chấm chất lượng agent | `resources/rubrics` |
 | Lập kế hoạch adoption | `resources/adoption-roadmap` |
+
+## Production operations
+
+| Nhu cầu | Bài nên đọc |
+|---|---|
+| Thiết kế runtime production | `11-production-operations/02-runtime-architecture` |
+| Kiểm soát cost và latency | `11-production-operations/03-cost-latency-reliability` |
+| Rollout agent an toàn | `11-production-operations/04-release-rollout` |
+| Xử lý incident agent | `11-production-operations/05-incident-response` |

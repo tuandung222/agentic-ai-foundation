@@ -142,6 +142,7 @@ const config: Config = {
             {label: 'Context Engineering', to: '/docs/02-context-engineering/01-overview'},
             {label: 'MCP', to: '/docs/03-mcp-tool-protocols/01-overview'},
             {label: 'Security', to: '/docs/08-security-governance/01-overview'},
+            {label: 'Production', to: '/docs/11-production-operations/01-overview'},
           ],
         },
         {
