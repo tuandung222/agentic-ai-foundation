@@ -97,3 +97,20 @@ Lộ trình này dành cho người muốn triển khai ngay trong team.
 6. Adoption Roadmap.
 
 Sau lộ trình này, người đọc nên có đủ khung để viết agent design brief, tool card, eval task card, approval request và policy tối thiểu.
+
+## Lộ trình 8: Production-grade Agentic Engineering
+
+Lộ trình này dành cho người đã quen với agent cơ bản và muốn nâng hệ thống lên mức vận hành chuyên nghiệp.
+
+1. Năm phân hệ chức năng của agentic system.
+2. Memory architectures và semantic offload.
+3. Structured reasoning output.
+4. Stateless MCP và `AGENTS.md` convention.
+5. Agentic Document Workflows.
+6. Supervisor và editorial patterns.
+7. LLM-as-judge và evaluation harness design.
+8. HITL và time-travel.
+9. Token cost model và cost optimization playbook.
+10. Lab Pack 6 bài tập.
+
+Sau lộ trình này, người đọc nên có khả năng đánh giá một hệ thống agentic theo các trục kỹ thuật, kiến trúc, an toàn và chi phí, đồng thời biết cách tối ưu mà không phá vỡ chất lượng.

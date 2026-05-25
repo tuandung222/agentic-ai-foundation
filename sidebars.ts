@@ -12,6 +12,7 @@ const sidebars: SidebarsConfig = {
         '00-mental-model/01-overview',
         '00-mental-model/02-llm-assistant-agent',
         '00-mental-model/03-agentic-engineering',
+        '00-mental-model/04-five-subsystems',
       ],
     },
     {
@@ -23,6 +24,7 @@ const sidebars: SidebarsConfig = {
         '01-agent-anatomy/01-overview',
         '01-agent-anatomy/02-planner-executor-memory',
         '01-agent-anatomy/03-agent-loop-patterns',
+        '01-agent-anatomy/04-memory-architectures',
       ],
     },
     {
@@ -34,6 +36,7 @@ const sidebars: SidebarsConfig = {
         '02-context-engineering/01-overview',
         '02-context-engineering/02-instruction-files',
         '02-context-engineering/03-skills-workflows-memory',
+        '02-context-engineering/04-structured-reasoning-output',
       ],
     },
     {
@@ -47,6 +50,8 @@ const sidebars: SidebarsConfig = {
         '03-mcp-tool-protocols/03-tool-design',
         '03-mcp-tool-protocols/04-mcp-security-model',
         '03-mcp-tool-protocols/05-building-mcp-server',
+        '03-mcp-tool-protocols/06-stateless-mcp',
+        '03-mcp-tool-protocols/07-agents-md-convention',
       ],
     },
     {
@@ -71,6 +76,7 @@ const sidebars: SidebarsConfig = {
         '05-multi-agent-systems/02-team-patterns',
         '05-multi-agent-systems/03-failure-modes',
         '05-multi-agent-systems/04-blackboard-shared-state',
+        '05-multi-agent-systems/05-supervisor-and-editorial-patterns',
       ],
     },
     {
@@ -82,6 +88,7 @@ const sidebars: SidebarsConfig = {
         '06-agent-ready-repositories/01-overview',
         '06-agent-ready-repositories/02-repo-playbook',
         '06-agent-ready-repositories/03-templates',
+        '06-agent-ready-repositories/04-agentic-document-workflows',
       ],
     },
     {
@@ -94,6 +101,8 @@ const sidebars: SidebarsConfig = {
         '07-evaluation-observability/02-trace-based-evals',
         '07-evaluation-observability/03-debugging-agent-runs',
         '07-evaluation-observability/04-evaluation-harness',
+        '07-evaluation-observability/05-llm-as-judge',
+        '07-evaluation-observability/06-evaluation-harness-design',
       ],
     },
     {
@@ -107,6 +116,7 @@ const sidebars: SidebarsConfig = {
         '08-security-governance/03-governance-controls',
         '08-security-governance/04-prompt-injection-defense',
         '08-security-governance/05-permission-model',
+        '08-security-governance/06-hitl-time-travel',
       ],
     },
     {
@@ -144,6 +154,7 @@ const sidebars: SidebarsConfig = {
         '11-production-operations/03-cost-latency-reliability',
         '11-production-operations/04-release-rollout',
         '11-production-operations/05-incident-response',
+        '11-production-operations/06-cost-model',
       ],
     },
     {
@@ -164,6 +175,9 @@ const sidebars: SidebarsConfig = {
         'resources/eval-task-bank',
         'resources/governance-policy-template',
         'resources/course-syllabus',
+        'resources/course-syllabus-12-weeks',
+        'resources/lab-pack',
+        'resources/cost-optimization-playbook',
         'resources/capstone-projects',
       ],
     },

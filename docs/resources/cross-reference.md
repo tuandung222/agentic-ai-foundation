@@ -66,4 +66,23 @@ title: Cross-reference
 | Nhu cầu | Tài nguyên |
 |---|---|
 | Dạy hoặc tự học theo tuần | `resources/course-syllabus` |
+| Lộ trình 12 tuần chuyên sâu | `resources/course-syllabus-12-weeks` |
 | Làm project tổng hợp | `resources/capstone-projects` |
+| Bộ 6 lab paste-and-run | `resources/lab-pack` |
+
+## Research-aligned chapters
+
+| Khái niệm | Bài nên đọc |
+|---|---|
+| Năm phân hệ chức năng | `00-mental-model/04-five-subsystems` |
+| Memory architectures | `01-agent-anatomy/04-memory-architectures` |
+| Structured reasoning output | `02-context-engineering/04-structured-reasoning-output` |
+| Stateless MCP | `03-mcp-tool-protocols/06-stateless-mcp` |
+| AGENTS.md convention | `03-mcp-tool-protocols/07-agents-md-convention` |
+| Supervisor và editorial | `05-multi-agent-systems/05-supervisor-and-editorial-patterns` |
+| Agentic Document Workflows | `06-agent-ready-repositories/04-agentic-document-workflows` |
+| LLM-as-judge | `07-evaluation-observability/05-llm-as-judge` |
+| Evaluation harness design | `07-evaluation-observability/06-evaluation-harness-design` |
+| HITL và time-travel | `08-security-governance/06-hitl-time-travel` |
+| Token cost model | `11-production-operations/06-cost-model` |
+| Cost optimization playbook | `resources/cost-optimization-playbook` |

@@ -17,6 +17,14 @@ PUBLIC_LEAK_PATTERN = re.compile(
     r"bí mật|secret book|constraint riêng|crawler|bing crawler|đang viết bí mật|README rỗng",
     re.IGNORECASE,
 )
+PERSONAL_LEAK_PATTERN = re.compile(
+    r"Small[- ]?Qwen|CLIP[- ]?HAR|LLMs?-with-Semantic-Search|Open[- ]?vocabulary-Action-Recognition|tuandung222",
+    re.IGNORECASE,
+)
+COURSE_LEAK_PATTERN = re.compile(
+    r"\bCS294\b|\bCS194\b|DeepLearning\.AI|GH[- ]?600|AI Agents for Beginners",
+    re.IGNORECASE,
+)
 
 
 def iter_text_files() -> list[Path]:
@@ -70,6 +78,10 @@ def check_source_hygiene(errors: list[str]) -> None:
             errors.append(f"old template residue found in {rel}")
         if path.is_relative_to(DOCS) and PUBLIC_LEAK_PATTERN.search(text):
             errors.append(f"public leak wording found in {rel}")
+        if path.is_relative_to(DOCS) and PERSONAL_LEAK_PATTERN.search(text):
+            errors.append(f"personal identity leak found in {rel}")
+        if path.is_relative_to(DOCS) and COURSE_LEAK_PATTERN.search(text):
+            errors.append(f"specific course or certification name found in {rel}")
 
 
 def check_sidebar_doc_ids(errors: list[str]) -> None:

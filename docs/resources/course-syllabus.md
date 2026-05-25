@@ -39,3 +39,7 @@ Người học nên được đánh giá bằng artifact, không chỉ bằng c�
 ## Tiêu chí hoàn thành
 
 Một người hoàn thành khóa học không cần biết mọi framework mới nhất. Họ cần biết cách đặt câu hỏi đúng: agent thấy dữ liệu nào, được phép gọi tool nào, state nằm ở đâu, eval đo gì, prompt injection được chặn thế nào, và rollback diễn ra ra sao.
+
+## Phiên bản 12 tuần
+
+Khi nhóm học có thời lượng dài hơn hoặc cần đào tạo chuyên sâu cho team triển khai, hãy chọn `resources/course-syllabus-12-weeks`. Phiên bản này tổ chức theo 6 module và bổ sung memory architectures, ADW, cost model, HITL và time-travel.

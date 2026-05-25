@@ -155,6 +155,8 @@ const config: Config = {
             {label: 'Learning Paths', to: '/docs/resources/learning-paths'},
             {label: 'Templates', to: '/docs/resources/practitioner-templates'},
             {label: 'Syllabus', to: '/docs/resources/course-syllabus'},
+            {label: 'Lab Pack', to: '/docs/resources/lab-pack'},
+            {label: 'Cost Model', to: '/docs/11-production-operations/06-cost-model'},
           ],
         },
       ],
