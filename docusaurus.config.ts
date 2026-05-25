@@ -153,6 +153,7 @@ const config: Config = {
             {label: 'Checklists', to: '/docs/resources/checklists'},
             {label: 'Agentic Map', to: '/docs/resources/agentic-engineering-map'},
             {label: 'Learning Paths', to: '/docs/resources/learning-paths'},
+            {label: 'Templates', to: '/docs/resources/practitioner-templates'},
           ],
         },
       ],

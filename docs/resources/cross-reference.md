@@ -52,3 +52,11 @@ title: Cross-reference
 | Kiểm soát cost và latency | `11-production-operations/03-cost-latency-reliability` |
 | Rollout agent an toàn | `11-production-operations/04-release-rollout` |
 | Xử lý incident agent | `11-production-operations/05-incident-response` |
+
+## Practitioner assets
+
+| Nhu cầu | Tài nguyên |
+|---|---|
+| Template thiết kế agent | `resources/practitioner-templates` |
+| Bộ ý tưởng eval task | `resources/eval-task-bank` |
+| Policy governance mẫu | `resources/governance-policy-template` |

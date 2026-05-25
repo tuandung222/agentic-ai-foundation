@@ -84,3 +84,16 @@ Lộ trình này dành cho người chuẩn bị đưa agent vào môi trường
 7. Incident Response cho Agentic Systems.
 
 Sau lộ trình này, người đọc nên có khả năng thiết kế release gate, canary rollout, trace strategy, incident runbook và ownership model cho agent production.
+
+## Lộ trình 7: Practitioner Toolkit
+
+Lộ trình này dành cho người muốn triển khai ngay trong team.
+
+1. Repo Playbook.
+2. Templates cho Agent-ready Repo.
+3. Practitioner Templates.
+4. Eval Task Bank.
+5. Governance Policy Template.
+6. Adoption Roadmap.
+
+Sau lộ trình này, người đọc nên có đủ khung để viết agent design brief, tool card, eval task card, approval request và policy tối thiểu.
