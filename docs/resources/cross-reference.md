@@ -19,3 +19,18 @@ title: Cross-reference
 - **Practitioner path:** Phần 2, 3, 6, 7, 10.
 - **Research path:** Phần 3, 4, 5, 9.
 - **Governance path:** Phần 3, 7, 8, 10.
+
+
+## Bài giảng chuyên sâu mới
+
+| Chủ đề | Bài nên đọc |
+|---|---|
+| MCP security | `03-mcp-tool-protocols/04-mcp-security-model` |
+| Thiết kế MCP server | `03-mcp-tool-protocols/05-building-mcp-server` |
+| Identity và state trong A2A | `04-agent-to-agent/04-identity-state-contracts` |
+| Shared state multi-agent | `05-multi-agent-systems/04-blackboard-shared-state` |
+| Evaluation harness | `07-evaluation-observability/04-evaluation-harness` |
+| Prompt injection defense | `08-security-governance/04-prompt-injection-defense` |
+| Permission model | `08-security-governance/05-permission-model` |
+| Ecosystem decision guide | `09-ecosystem-map/04-decision-guide` |
+| Research agent với MCP | `10-case-studies/04-research-agent-with-mcp` |

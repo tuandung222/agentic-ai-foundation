@@ -149,6 +149,7 @@ const config: Config = {
             {label: 'Glossary', to: '/docs/resources/glossary'},
             {label: 'Maturity Matrix', to: '/docs/resources/maturity-matrix'},
             {label: 'Checklists', to: '/docs/resources/checklists'},
+            {label: 'Agentic Map', to: '/docs/resources/agentic-engineering-map'},
           ],
         },
       ],

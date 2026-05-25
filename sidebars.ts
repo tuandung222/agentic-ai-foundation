@@ -45,6 +45,8 @@ const sidebars: SidebarsConfig = {
         '03-mcp-tool-protocols/01-overview',
         '03-mcp-tool-protocols/02-mcp-architecture',
         '03-mcp-tool-protocols/03-tool-design',
+        '03-mcp-tool-protocols/04-mcp-security-model',
+        '03-mcp-tool-protocols/05-building-mcp-server',
       ],
     },
     {
@@ -56,6 +58,7 @@ const sidebars: SidebarsConfig = {
         '04-agent-to-agent/01-overview',
         '04-agent-to-agent/02-handoff-delegation',
         '04-agent-to-agent/03-protocol-comparison',
+        '04-agent-to-agent/04-identity-state-contracts',
       ],
     },
     {
@@ -67,6 +70,7 @@ const sidebars: SidebarsConfig = {
         '05-multi-agent-systems/01-overview',
         '05-multi-agent-systems/02-team-patterns',
         '05-multi-agent-systems/03-failure-modes',
+        '05-multi-agent-systems/04-blackboard-shared-state',
       ],
     },
     {
@@ -89,6 +93,7 @@ const sidebars: SidebarsConfig = {
         '07-evaluation-observability/01-overview',
         '07-evaluation-observability/02-trace-based-evals',
         '07-evaluation-observability/03-debugging-agent-runs',
+        '07-evaluation-observability/04-evaluation-harness',
       ],
     },
     {
@@ -100,6 +105,8 @@ const sidebars: SidebarsConfig = {
         '08-security-governance/01-overview',
         '08-security-governance/02-threat-model',
         '08-security-governance/03-governance-controls',
+        '08-security-governance/04-prompt-injection-defense',
+        '08-security-governance/05-permission-model',
       ],
     },
     {
@@ -111,6 +118,7 @@ const sidebars: SidebarsConfig = {
         '09-ecosystem-map/01-overview',
         '09-ecosystem-map/02-platforms-frameworks',
         '09-ecosystem-map/03-standards-maturity',
+        '09-ecosystem-map/04-decision-guide',
       ],
     },
     {
@@ -122,6 +130,7 @@ const sidebars: SidebarsConfig = {
         '10-case-studies/01-overview',
         '10-case-studies/02-coding-agent',
         '10-case-studies/03-enterprise-agent',
+        '10-case-studies/04-research-agent-with-mcp',
       ],
     },
     {
@@ -133,6 +142,7 @@ const sidebars: SidebarsConfig = {
         'resources/maturity-matrix',
         'resources/checklists',
         'resources/cross-reference',
+        'resources/agentic-engineering-map',
       ],
     },
   ],
