@@ -60,3 +60,10 @@ title: Cross-reference
 | Template thiết kế agent | `resources/practitioner-templates` |
 | Bộ ý tưởng eval task | `resources/eval-task-bank` |
 | Policy governance mẫu | `resources/governance-policy-template` |
+
+## Course assets
+
+| Nhu cầu | Tài nguyên |
+|---|---|
+| Dạy hoặc tự học theo tuần | `resources/course-syllabus` |
+| Làm project tổng hợp | `resources/capstone-projects` |

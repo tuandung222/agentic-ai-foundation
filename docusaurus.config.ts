@@ -154,6 +154,7 @@ const config: Config = {
             {label: 'Agentic Map', to: '/docs/resources/agentic-engineering-map'},
             {label: 'Learning Paths', to: '/docs/resources/learning-paths'},
             {label: 'Templates', to: '/docs/resources/practitioner-templates'},
+            {label: 'Syllabus', to: '/docs/resources/course-syllabus'},
           ],
         },
       ],

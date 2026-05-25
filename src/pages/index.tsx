@@ -51,7 +51,7 @@ function PartGrid(): ReactNode {
               <div className={styles.cardNumber}>PHẦN {number}</div>
               <Heading as="h3" className={styles.cardTitle}>{title}</Heading>
               <p className={styles.cardDescription}>{description}</p>
-              <span className={styles.badgeReady}>Đang xây dựng</span>
+              <span className={styles.badgeReady}>Đọc phần này</span>
             </Link>
           ))}
         </div>

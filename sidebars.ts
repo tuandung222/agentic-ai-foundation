@@ -163,6 +163,8 @@ const sidebars: SidebarsConfig = {
         'resources/practitioner-templates',
         'resources/eval-task-bank',
         'resources/governance-policy-template',
+        'resources/course-syllabus',
+        'resources/capstone-projects',
       ],
     },
   ],
